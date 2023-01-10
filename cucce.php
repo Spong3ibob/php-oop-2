@@ -1,13 +1,17 @@
 <?php
 
-class Cucce{
+class Cuccia{
+    public $brand;
+    public $colore;
     public $prezzo;
-    public $grandezza;
+    public $dimensioni;
     public $materiale;
 
-    public function constant( $prezzo,  $grandezza,  $materiale){
+    public function Cuccia($brand,$colore, $prezzo,  $dimensioni,  $materiale){
+        $this->brand = $brand;
+        $this->colore = $colore;
         $this->prezzo = $prezzo;
-        $this->grandezza = $grandezza;
+        $this->dimensioni = $dimensioni;
         $this->materiale = $materiale;
     }
 }
