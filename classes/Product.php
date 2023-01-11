@@ -5,12 +5,14 @@ class Product{
     private $image;
     private $price;
     private $name;
+    private $category;
 
-    public function _constract(string $image, float $price, string $name)
+    public function __construct(string $image, float $price, string $name, Category $category)
     {
         $this->image = $image;
         $this->price = $price;
         $this->name = $name;
+        $this->category = $category;
     }
 
     public function getImage()
@@ -24,5 +26,9 @@ class Product{
     public function getName()
     {
         return $this->name;
+    }
+    public function getCategory()
+    {
+        return $this->category;
     }
 }
